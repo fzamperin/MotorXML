@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components>
+	<component type='equacaoSegundoGrau'>
+		<parameters>
+			<parameter>2</parameter>
+		</parameters>
+		<component type='Multiplicacao' class='com.fzamperin.reflection.Multiplicacao'>
+			<parameters>
+				<parameter>#PARAMETER1</parameter>
+				<parameter>#PARAMETER1</parameter>
+			</parameters>
+		</component>
+		<component type='Multiplicacao' class='com.fzamperin.reflection.Multiplicacao'>
+			<parameters>
+				<parameter>#OUTPUT1</parameter>
+				<parameter>2</parameter>
+			</parameters>
+		</component>
+		<component type='Multiplicacao' class='com.fzamperin.reflection.Multiplicacao'>
+			<parameters>
+				<parameter>3</parameter>
+				<parameter>#PARAMETER1</parameter>
+			</parameters>
+		</component>
+		<component type='Soma' class='com.fzamperin.reflection.Soma'>
+			<parameters>
+				<parameter>#OUTPUT3</parameter>
+				<parameter>#OUTPUT2</parameter>
+			</parameters>
+		</component>
+		<component type='Soma' class='com.fzamperin.reflection.Soma'>
+			<parameters>
+				<parameter>8</parameter>
+				<parameter>#OUTPUT4</parameter>
+			</parameters>
+		</component>
+	</component>
+</components>
